@@ -1,5 +1,5 @@
 
-## MetrixSDK Web/PWA 
+## MetrixSDK pwa sample 
 <div dir="rtl">
 
 پلاگین وب و PWA کتابخانه متریکس، اطلاعات بیشتر در [متریکس](https://metrix.ir).
