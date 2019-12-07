@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#008000"/>
+    <title>Metrix web sdk</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="all">
+    <link rel="manifest" href="manifest.json">
+  </head>
+  <body>
+    <button id="track-event">track event</button>
+    <button id="track-revenue">track revenue; amount is 1000 IRR</button>
+    <script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      const firebaseConfig = {
+  apiKey: "AIzaSyA0isLO9pdZqYV47IgHeqxqxe0BFMSrALI",
+  authDomain: "metrix-ca6a9.firebaseapp.com",
+  databaseURL: "https://metrix-ca6a9.firebaseio.com",
+  projectId: "metrix-ca6a9",
+  storageBucket: "metrix-ca6a9.appspot.com",
+  messagingSenderId: "730143097783",
+  appId: "1:730143097783:web:663d2a86a0a4a19eaa9e32"
+};
+      firebase.initializeApp(config);
+    </script>
+    <script>
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js')
+          .then(function() {
+                console.log('Service Worker Registered');
+          });
+      }
+    </script>
+
+<script type="text/javascript" src="dist/metrix.min.js"></script>
+<script type="text/javascript" src="metrix.js"></script>
+
+     </body>
+</html>
